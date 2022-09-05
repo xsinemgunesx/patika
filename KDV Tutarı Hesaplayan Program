@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class KDV {
+    public static void main(String[] args) {
+        double kdvTutar,kdvFiyat;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Para miktarini giriniz : ");
+        double para = scanner.nextInt();
+        if(0<=para && para<=1000){
+             kdvTutar = (para*18)/100;
+        }
+        else {
+             kdvTutar = (para*8)/100;
+        }
+        kdvFiyat = para + kdvTutar;
+        System.out.println("KDV'li fiyati : "+ kdvFiyat);
+        System.out.println("KDV tutari : "+ kdvTutar);
+
+
+    }
+}
