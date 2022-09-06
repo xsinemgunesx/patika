@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class VucutIndexs {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz : ");
+        float boy = scanner.nextFloat();
+
+        System.out.print("Lütfen kilonuzu giriniz : ");
+        float kilo = scanner.nextFloat();
+
+        float kitleHesap = kilo / (boy*boy);
+
+        System.out.println("Vücut Kitle İndeksiniz : "+kitleHesap);
+
+    }
+}
