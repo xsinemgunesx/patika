@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Hipotenus {
+    public static void main(String[] args) {
+        int uzun,kisa ;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Uzun kenari giriniz : ");
+        uzun = scanner.nextInt();
+
+        System.out.print("Kisa kenari giriniz : ");
+        kisa = scanner.nextInt();
+
+        int hipotenus =(int) Math.sqrt(uzun*uzun + kisa*kisa);
+        System.out.println("Hipotenus : "+ hipotenus);
+        int alan = (uzun * kisa)/2;
+        System.out.println("Üçgenin alanı : "+alan);
+
+    }
+}
