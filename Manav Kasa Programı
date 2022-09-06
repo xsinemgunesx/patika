@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Kasa {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double armut=2.14,elma = 3.64,domates =1.11,muz = 0.95,patlican =5.0 ;
+
+
+        System.out.print("Armut Kaç Kilo ? :");
+        double a = scanner.nextFloat();
+        a = armut * a;
+
+        System.out.print("Elma Kaç Kilo ? :");
+        double e = scanner.nextFloat();
+        e= e*elma;
+
+        System.out.print("Domates Kaç Kilo ? :");
+        double d = scanner.nextFloat();
+        d = d*domates;
+
+        System.out.print("Muz Kaç Kilo ? :");
+        double m = scanner.nextFloat();
+        m = m* muz;
+
+        System.out.print("Patlican Kaç Kilo ? :");
+        double p = scanner.nextFloat();
+        p = p* patlican;
+
+        double tutar = a + e + d + m + p;
+
+        System.out.println("Toplam tutar :"+tutar);
+
+    }
+}
